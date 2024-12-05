@@ -1,0 +1,23 @@
+package abstraction;
+
+abstract class Car{
+	abstract void drive();
+	void fly() {
+		System.out.println("flying.....");
+	}
+}
+	class WagonR extends Car{
+		void drive() {
+			System.out.println("driving....");
+		}
+	}
+
+
+public class abstractTest {
+	public static void main(String[] args) {
+		WagonR wagon = new WagonR();
+		wagon.drive();
+		wagon.fly();
+	}
+}
+
